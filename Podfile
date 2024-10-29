@@ -6,16 +6,15 @@ target 'Articles' do
   use_frameworks!
 
   # Pods for Articles
-  pod 'Alamofire'
-#	pod 'Cache'
-#	pod 'Alamofire'
-#	pod 'AlamofireNetworkActivityIndicator'
-#	pod 'XCGLogger'
-#	pod 'Swinject'
-#	pod 'ReachabilitySwift'
-#	pod 'Kingfisher'
-#	pod 'FTLinearActivityIndicator'
-#	pod 'KMNavigationBarTransition'
-#	pod 'Loaf'
+	pod 'Cache'
+	pod 'Alamofire'
+	pod 'AlamofireNetworkActivityIndicator'
+	pod 'XCGLogger'
+	pod 'Swinject'
+	pod 'ReachabilitySwift'
+	pod 'Kingfisher'
+	pod 'FTLinearActivityIndicator'
+	pod 'KMNavigationBarTransition'
+	pod 'Loaf'
 
 end

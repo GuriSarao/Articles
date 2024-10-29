@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="217"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlR-gu-lcU">
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlR-gu-lcU">
                         <rect key="frame" x="12" y="12" width="296" height="193"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jan 7, 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jQx-rl-6my">
@@ -25,13 +26,6 @@
                                 <color key="textColor" red="0.60784313725490191" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madeInChina" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-hQ-gvv">
-                                <rect key="frame" x="154" y="32" width="130" height="70"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="G1o-uN-VOp"/>
-                                    <constraint firstAttribute="height" constant="70" id="QTM-df-cE1"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did China Became The World’s Factory?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJv-K6-KNp">
                                 <rect key="frame" x="12" y="36" width="130" height="36"/>
                                 <constraints>
@@ -42,27 +36,44 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfM-sA-vv9">
-                                <rect key="frame" x="12" y="74" width="130" height="95.666666666666686"/>
+                                <rect key="frame" x="12" y="74" width="134" height="95.666666666666686"/>
                                 <string key="text">Over 30%* of the world goods are manufactured in China. In every 10 articles made 3 of them are made in China. More than 70% of toys and half of the electronics made in China, Over 30%* of the world goods are manufactured in China. In every 10 articles made 3 of them are made in P...</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="8"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ao0-iC-hpW">
+                                <rect key="frame" x="154" y="32" width="130" height="75"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="madeInChina" translatesAutoresizingMaskIntoConstraints="NO" id="a4e-hQ-gvv">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="75"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="a4e-hQ-gvv" secondAttribute="trailing" id="3GM-ov-oL1"/>
+                                    <constraint firstItem="a4e-hQ-gvv" firstAttribute="top" secondItem="Ao0-iC-hpW" secondAttribute="top" id="PJI-L6-qpt"/>
+                                    <constraint firstAttribute="bottom" secondItem="a4e-hQ-gvv" secondAttribute="bottom" id="a0i-38-Y0D"/>
+                                    <constraint firstItem="a4e-hQ-gvv" firstAttribute="leading" secondItem="Ao0-iC-hpW" secondAttribute="leading" id="ePY-SI-g6V"/>
+                                    <constraint firstAttribute="height" constant="75" id="hRY-fx-Yz2"/>
+                                    <constraint firstAttribute="width" constant="130" id="u1g-QT-ElT"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.51372549019607838" green="0.83137254901960778" blue="0.93333333333333335" alpha="0.47188017384105962" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="KfM-sA-vv9" firstAttribute="leading" secondItem="hlR-gu-lcU" secondAttribute="leading" constant="12" id="1sA-dM-GfM"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KfM-sA-vv9" secondAttribute="bottom" constant="12" id="6MQ-nr-6Vw"/>
-                            <constraint firstAttribute="trailing" secondItem="a4e-hQ-gvv" secondAttribute="trailing" constant="12" id="L1p-ok-Pvo"/>
+                            <constraint firstItem="Ao0-iC-hpW" firstAttribute="leading" secondItem="KfM-sA-vv9" secondAttribute="trailing" constant="8" id="M0o-xg-MTf"/>
                             <constraint firstItem="KfM-sA-vv9" firstAttribute="top" secondItem="DJv-K6-KNp" secondAttribute="bottom" constant="2" id="Neg-WI-mQP"/>
+                            <constraint firstItem="Ao0-iC-hpW" firstAttribute="leading" secondItem="DJv-K6-KNp" secondAttribute="trailing" constant="12" id="PGD-SD-xHc"/>
+                            <constraint firstItem="Ao0-iC-hpW" firstAttribute="top" secondItem="jQx-rl-6my" secondAttribute="bottom" constant="8" symbolic="YES" id="R1b-vm-Efl"/>
                             <constraint firstItem="DJv-K6-KNp" firstAttribute="leading" secondItem="hlR-gu-lcU" secondAttribute="leading" constant="12" id="UVp-kX-ULd"/>
-                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="a4e-hQ-gvv" secondAttribute="bottom" constant="12" id="ZEh-9l-jes"/>
-                            <constraint firstItem="a4e-hQ-gvv" firstAttribute="top" secondItem="jQx-rl-6my" secondAttribute="bottom" constant="8" id="aWG-3G-9hp"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ao0-iC-hpW" secondAttribute="bottom" constant="20" id="VaP-Va-rMW"/>
                             <constraint firstItem="jQx-rl-6my" firstAttribute="leading" secondItem="hlR-gu-lcU" secondAttribute="leading" constant="12" id="b3i-qV-f3P"/>
                             <constraint firstAttribute="trailing" secondItem="jQx-rl-6my" secondAttribute="trailing" constant="12" id="d00-YB-FEu"/>
-                            <constraint firstItem="a4e-hQ-gvv" firstAttribute="leading" secondItem="KfM-sA-vv9" secondAttribute="trailing" constant="12" id="nEM-He-RUK"/>
+                            <constraint firstAttribute="trailing" secondItem="Ao0-iC-hpW" secondAttribute="trailing" constant="12" id="otC-3e-Cbk"/>
                             <constraint firstItem="jQx-rl-6my" firstAttribute="top" secondItem="hlR-gu-lcU" secondAttribute="top" constant="12" id="u49-b1-Ed1"/>
-                            <constraint firstItem="a4e-hQ-gvv" firstAttribute="leading" secondItem="DJv-K6-KNp" secondAttribute="trailing" constant="12" id="xaR-Jv-I8y"/>
                             <constraint firstItem="DJv-K6-KNp" firstAttribute="top" secondItem="jQx-rl-6my" secondAttribute="bottom" constant="12" id="xiF-a4-RxI"/>
                         </constraints>
                     </view>
@@ -76,7 +87,12 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="img_article" destination="a4e-hQ-gvv" id="Zjh-pZ-hpg"/>
+                <outlet property="lbl_description" destination="KfM-sA-vv9" id="lCj-JF-K0x"/>
+                <outlet property="lbl_time" destination="jQx-rl-6my" id="7op-CS-mEW"/>
+                <outlet property="lbl_title" destination="DJv-K6-KNp" id="oPM-8k-BJz"/>
                 <outlet property="view_bg" destination="hlR-gu-lcU" id="7ca-h9-4Sj"/>
+                <outlet property="view_bg_img" destination="Ao0-iC-hpW" id="VTQ-fY-w8y"/>
             </connections>
             <point key="canvasLocation" x="25.954198473282442" y="59.507042253521128"/>
         </tableViewCell>
