@@ -7,8 +7,8 @@ target 'Articles' do
 
   # Pods for Articles
 	pod 'Cache'
-	pod 'Alamofire'
-	pod 'AlamofireNetworkActivityIndicator'
+  pod 'Alamofire', '~> 5.10.1'
+  pod 'AlamofireNetworkActivityIndicator', '~> 3.1'
 	pod 'XCGLogger'
 	pod 'Swinject'
 	pod 'ReachabilitySwift'

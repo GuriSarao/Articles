@@ -10,7 +10,7 @@ import Foundation
 struct ArticlesListResponse: Codable {
     let status: String
     let totalResults: Int
-    let articles: [Article]
+    var articles: [Article]
     
     // Computed property to check if the status is "ok"
     var isSuccess: Bool {

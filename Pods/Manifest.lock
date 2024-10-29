@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (4.9.1)
-  - AlamofireNetworkActivityIndicator (2.4.0):
-    - Alamofire (~> 4.8)
+  - Alamofire (5.10.1)
+  - AlamofireNetworkActivityIndicator (3.1.0):
+    - Alamofire (~> 5.1)
   - Cache (6.0.0)
   - FTLinearActivityIndicator (2.0)
   - Kingfisher (8.1.0)
@@ -18,8 +18,8 @@ PODS:
     - ObjcExceptionBridging
 
 DEPENDENCIES:
-  - Alamofire
-  - AlamofireNetworkActivityIndicator
+  - Alamofire (~> 5.10.1)
+  - AlamofireNetworkActivityIndicator (~> 3.1)
   - Cache
   - FTLinearActivityIndicator
   - Kingfisher
@@ -44,8 +44,8 @@ SPEC REPOS:
     - XCGLogger
 
 SPEC CHECKSUMS:
-  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  Alamofire: 840d2a1ad82355b536ec6ba5f97e5bfa54600ca3
+  AlamofireNetworkActivityIndicator: 6564782bd7b9e6c430ae67d9277af01907b01ca4
   Cache: 4ca7e00363fca5455f26534e5607634c820ffc2d
   FTLinearActivityIndicator: e87c8ca748f1a99163b3f6255326736c72e2fde7
   Kingfisher: dfbf20b6249ed4ef6f18d6a96c847bce860bdb95
@@ -56,6 +56,6 @@ SPEC CHECKSUMS:
   Swinject: a827d508c6270da03ec74e558e728917a888fa9b
   XCGLogger: 399c5885210b4e2ad79d9f7a29b105d672ef724f
 
-PODFILE CHECKSUM: e2997bc6a5bfaa0a9c59c70a120f094b821bf355
+PODFILE CHECKSUM: 17d41f93bcc9ade2c2a5257d78f041feebeefe4a
 
 COCOAPODS: 1.15.2
